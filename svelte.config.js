@@ -1,6 +1,6 @@
 import adapter from '@sveltejs/adapter-static';
 
-const dev = true;
+const dev = false;
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -15,7 +15,7 @@ const config = {
             strict: true
         }),
 		paths: {
-			base: dev ? "" : "/portfolio/"
+			base: dev ? "" : "/portfolio"
 		}
     }
 };

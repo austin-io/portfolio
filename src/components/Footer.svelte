@@ -1,9 +1,9 @@
 <style>
-    footer {
+    .footer {
         background-color: rgb(255, 252, 237);
     }
 </style>
 
-<footer class="px2 py1 center">
+<footer class="px2 py1 center footer">
     Footer
 </footer>

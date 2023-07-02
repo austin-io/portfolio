@@ -3,12 +3,12 @@
 </script>
 
 <style>
-    main {
+    .main {
         margin-top: 6rem;
     }
 </style>
 
-<main class="center px2">
+<main class="center px2 main">
     <!-- 
         <img class="mb1" src="https://picsum.photos/536/354" />
     --> 
