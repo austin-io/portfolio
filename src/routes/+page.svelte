@@ -28,6 +28,7 @@
             display: grid;
             grid-template-rows: 1fr auto;
             font-family: 'Poppins', sans-serif;
+            background-color: white;
         }
 
         .center {

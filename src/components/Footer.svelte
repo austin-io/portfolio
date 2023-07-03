@@ -1,6 +1,6 @@
 <style>
     .footer {
-        background-color: rgb(255, 252, 237);
+        background-color: rgb(236, 236, 236);
     }
 </style>
 

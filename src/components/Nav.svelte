@@ -1,3 +1,7 @@
+<script>
+    import Button from "./Button.svelte";
+</script>
+
 <style>
     .nav {
         position: fixed;
@@ -8,11 +12,14 @@
         background-color: white;
         border-radius: 1rem;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        display: flex;
+        justify-content: space-between;
     }
 </style>
 
 <nav class="p1 nav">
     <section class="center p1">
-        Nav
+        <Button>Nav</Button>
+        <Button>Menu</Button>
     </section>
 </nav>
