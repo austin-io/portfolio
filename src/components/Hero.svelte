@@ -4,6 +4,10 @@
 </script>
 
 <style>
+    section {
+        margin-bottom: 4rem;
+    }
+
     .visual {
         width: 100%;
         aspect-ratio: 16/9;
