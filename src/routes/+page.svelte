@@ -61,8 +61,16 @@
             padding-bottom: 2rem;
         }
 
-        .mb1 {
-            margin-bottom: 1rem;
+        .mb1 { margin-bottom: 1rem;}
+        .mb2 { margin-bottom: 2rem;}
+        .mb3 { margin-bottom: 3rem;}
+        .mb4 { margin-bottom: 4rem;}
+
+        .grad {
+            background: -webkit-linear-gradient(#eeeeee, #4400ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     </style>
 </svelte:head>
