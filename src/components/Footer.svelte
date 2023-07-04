@@ -1,6 +1,6 @@
 <style>
     .footer {
-        background-color: rgb(236, 236, 236);
+        background-color: #fafafa;
     }
 </style>
 

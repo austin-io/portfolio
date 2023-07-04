@@ -17,6 +17,10 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-padding: 5rem;
+        }
+
         img, picture, video, svg {
             width: 100%;
             display: block;
