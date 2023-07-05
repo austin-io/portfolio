@@ -1,4 +1,5 @@
 <script>
+    import VrImage from "$lib/images/vr_headset.gif";
     import ColorButton from "./ColorButton.svelte";
     let showVideo = false;
 </script>
@@ -55,7 +56,7 @@
     {#if showVideo}
         <iframe class="mb1 visual" src="https://www.youtube-nocookie.com/embed/iTtit7Rj5vY?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     {:else}
-        <img class="mb1 visual" src="https://media0.giphy.com/media/l1BgTjrfQE3VoQQvK/giphy.gif?cid=ecf05e470s17w987do32g38ms11hgs7prl241p44s5bzpjvp&ep=v1_gifs_related&rid=giphy.gif&ct=g" alt="vr placeholder">
+        <img class="mb1 visual" src={VrImage} alt="vr placeholder">
     {/if}
 
 </section>

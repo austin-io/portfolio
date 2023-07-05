@@ -58,7 +58,7 @@
         <div class="right">
             <div>
                 <h3 class="mb2">I'm Austin</h3>
-                <p>An XR Developer from California with over 3 years of experience. I've had the pleasure to work with several Fortune 500 companies, creating innovative projects in Virtual Reality. I've been a fan of video games all my life, and want to make them until I become an old grey wizard.</p>
+                <p>An XR Developer from California with over 3 years of experience. I've had the pleasure of working with several Fortune 500 companies, creating innovative projects in Virtual Reality. I've been a huge fan of video games all my life, and want to make them until I become an old grey wizard.</p>
             </div>
         </div>
     </div>
