@@ -70,6 +70,11 @@
         .mb3 { margin-bottom: 3rem;}
         .mb4 { margin-bottom: 4rem;}
 
+        .title {
+            font-size: calc(min(4rem, 10vw));
+            text-align: center;
+        }
+
         .grad {
             background: -webkit-linear-gradient(#eeeeee, #4400ff);
             -webkit-background-clip: text;

@@ -4,11 +4,6 @@
 
 <style>
 
-    h2 {
-        font-size: calc(min(4rem, 10vw));
-        text-align: center;
-    }
-
     h3 {
         font-size: 2rem;
     }
@@ -48,7 +43,7 @@
 </style>
 
 <section id="id_about" class="mb4">
-    <h2 class="mb3"><span class="grad">Who</span> am I?</h2>
+    <h2 class="mb3 title"><span class="grad">Who</span> am I?</h2>
 
     <div class="split">
         <div class="left">
