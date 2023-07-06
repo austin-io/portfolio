@@ -1,10 +1,10 @@
 <script>
     import VrImage from "$lib/images/vr_headset.gif";
-    import fidelisPreview from "$lib/images/fidelis_preview.png";
-    import forkliftPreview from "$lib/images/forklift_preview.png";
-    import celltypesPreview from "$lib/images/celltypes_preview.png";
-    import assassinPreview from "$lib/images/assassin_preview.png";
-    import labPreview from "$lib/images/lab_preview.png";
+    import fidelisPreview from "$lib/images/optimized_fidelis_preview.png";
+    import forkliftPreview from "$lib/images/optimized_forklift_preview.png";
+    import celltypesPreview from "$lib/images/optimized_celltypes_preview.png";
+    import assassinPreview from "$lib/images/optimized_assassin_preview.png";
+    import labPreview from "$lib/images/optimized_lab_preview.png";
 
     import Button from "./Button.svelte";
     
