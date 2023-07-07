@@ -31,6 +31,6 @@
     }
 </style>
 
-<button on:click={onClick} style="--bgColor: {bgColor}; --fs: {size}em;">
+<button on:click|preventDefault={onClick} style="--bgColor: {bgColor}; --fs: {size}em;">
     <slot></slot>
 </button>

@@ -25,6 +25,6 @@
     }
 </style>
 
-<button on:click={onClick}>
+<button on:click|preventDefault={onClick}>
     <slot></slot>
 </button>

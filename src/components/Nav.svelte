@@ -90,7 +90,7 @@
                             <a class="menuButton" href="#id_projects" on:click|preventDefault={scrollIntoView}>Projects</a>
                         </li>
                         <li>
-                            <a class="menuButton" href="#">Contact</a>
+                            <a class="menuButton" href="#id_contact" on:click|preventDefault={scrollIntoView}>Contact</a>
                         </li>
                     </ul>
                 </div>
