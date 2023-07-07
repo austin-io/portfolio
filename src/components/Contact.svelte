@@ -39,7 +39,7 @@
 <section id="id_contact" class="mb4">
     <h2 class="mb3 title"><span class="grad">Contact</span> Me</h2>
 
-    <p class="pretext mb2">You can follow me on <a href="#">LinkedIn</a>, or download my <a href="#">resume here!</a></p>
+    <p class="pretext mb2">Send me a message!<br>You can also follow me on <a href="https://www.linkedin.com/in/austin-poberezhnik-4570b3167/" target="_blank" rel="noopener noreferrer">LinkedIn</a>, or download my <a href="#">resume here!</a></p>
 
     <form>
         <h3>Name</h3>
@@ -47,7 +47,7 @@
         <h3>Message</h3>
         <textarea bind:value={formMessage} />
         <ColorButton bgColor={"#80f"} onClick={() => {
-            window.open(`mailto:test@gmail.com?subject=${formName} wants to talk&body=${formMessage}`);
+            window.open(`mailto:austinypwork+website@gmail.com?subject=${formName} wants to talk&body=${formMessage}`);
         }}>Send Email</ColorButton>
     </form>
 
