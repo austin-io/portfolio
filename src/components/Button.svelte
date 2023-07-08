@@ -9,6 +9,7 @@
         border-radius: 100vmax;
         font-weight: bold;
         cursor: pointer;
+        color: black;
         background-color: transparent;
 
         transition: all 100ms ease-in-out;

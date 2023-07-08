@@ -7,6 +7,12 @@
     import labPreview from "$lib/images/optimized_lab_preview.png";
 
     import Button from "./Button.svelte";
+    import Modal from "./Modal.svelte";
+
+    let showModal = false;
+    let modalHeader = "";
+    let modalContent = "";
+    let modalLinks = [];
     
     let list = [
         {name: "Fidelis", text: "A high fidelity Cataract Surgical Simulator in VR designed to train new Ophthamologists around the world.", 
@@ -20,6 +26,13 @@
         {name: "Lab XR", text: "A collection of rooms full of interactive VR experiences, demonstrating a variety of complex algorithms.", 
             link: "", image: labPreview, gif: VrImage},
     ];
+
+    const updateModal = (_h, _c, _l) => {
+        modalHeader = _h;
+        modalContent = _c;
+        modalLinks = _l;
+        showModal = true;
+    }
 </script>
 
 <style>
@@ -102,7 +115,7 @@
                 </div>
 
                 <div class="cardBtn">
-                    <Button>More info</Button>
+                    <Button onClick={() => {updateModal(project.name, project.text, [{name: "GitHub", url: "#"}])}}>More info</Button>
                 </div>
 
             </div>
@@ -110,3 +123,5 @@
 
     </div>
 </section>
+
+<Modal bind:show={showModal} heading={modalHeader} content={modalContent} links={modalLinks}></Modal>

@@ -92,6 +92,9 @@
                         <li>
                             <a class="menuButton" href="#id_contact" on:click|preventDefault={scrollIntoView}>Contact</a>
                         </li>
+                        <li>
+                            <a class="menuButton" href="#" on:click|preventDefault={() => {}}>Resume</a>
+                        </li>
                     </ul>
                 </div>
             {/if}
