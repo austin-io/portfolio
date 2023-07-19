@@ -63,6 +63,7 @@
     }
 
     .cardImage {
+        position: relative;
         background-size: cover;
         background-position: center;
         border-radius: 1rem;
@@ -87,6 +88,17 @@
         aspect-ratio: 16/10;
     }
 
+    .cardImage > div {
+        position: absolute;
+        right: 0.5rem;
+        bottom: 0.5rem;
+        background-color: #000a;
+        color: white;
+        font-weight: bold;
+        border-radius: 1rem;
+        padding: 0.1rem 0.5rem;
+    }
+
     .cardBody {
         padding: 0rem 1rem;
     }
@@ -106,7 +118,7 @@
             <div class="card">
                 
                 <div class="cardImage mb1" style="--bgImage: url({project.image}); --bgGif: url({project.gif});">
-                    
+                    <div>GIF</div>
                 </div>
 
                 <div class="cardBody">

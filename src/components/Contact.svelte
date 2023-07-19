@@ -1,6 +1,7 @@
 <script>
     import Button from "./Button.svelte";
     import ColorButton from "./ColorButton.svelte";
+    import Resume from "$lib/docs/Resume_AustinPoberezhnik.pdf";
 
     let formName = "";
     let formMessage = "";
@@ -40,7 +41,7 @@
 <section id="id_contact" class="mb4">
     <h2 class="mb3 title"><span class="grad">Contact</span> Me</h2>
 
-    <p class="pretext mb2">Send me a message!<br>You can also follow me on <a href="https://www.linkedin.com/in/austin-poberezhnik-4570b3167/" target="_blank" rel="noopener noreferrer">LinkedIn</a>, or download my <a href="#">resume here!</a></p>
+    <p class="pretext mb2">Send me a message!<br>You can also follow me on <a href="https://www.linkedin.com/in/austin-poberezhnik-4570b3167/" target="_blank" rel="noopener noreferrer">LinkedIn</a>, or download my <a href={Resume} download>resume here!</a></p>
 
     <form>
         <h3>Name</h3>

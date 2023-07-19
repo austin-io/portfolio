@@ -1,6 +1,7 @@
 <script>
     import Button from "./Button.svelte";
     import MenuIcon from "$lib/images/hamburger_menu_icon.svg";
+    import Resume from "$lib/docs/Resume_AustinPoberezhnik.pdf";
 
     let showMenu = false;
 
@@ -93,7 +94,7 @@
                             <a class="menuButton" href="#id_contact" on:click|preventDefault={scrollIntoView}>Contact</a>
                         </li>
                         <li>
-                            <a class="menuButton" href="#" on:click|preventDefault={() => {}}>Resume</a>
+                            <a class="menuButton" href={Resume} download>Resume</a>
                         </li>
                     </ul>
                 </div>
