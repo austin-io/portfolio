@@ -10,6 +10,7 @@
     export let content = "Content";
     export let gif = "http://127.0.0.1:5173/portfolio/src/lib/images/vr_headset.gif";
     export let links = [];
+    export let images = ["https://picsum.photos/400", "https://picsum.photos/400", "https://picsum.photos/400"];
 
 </script>
 
@@ -61,6 +62,25 @@
         align-items: center;
         gap: 1rem;
     }
+
+    .scroller {
+        width: 100%;
+        aspect-ratio: 16/9;
+        display: flex;
+        overflow-x: scroll;
+        gap: 1rem;
+        border-radius: 1rem;
+    }
+
+    .scroller > img {
+        flex: 0 0 auto;
+        width: auto;
+        object-fit: cover;
+        object-size: cover;
+        aspect-ratio: 16/9;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+    }
 </style>
 
 <dialog bind:this={dialog} on:close={() => {show = false;}} >
@@ -71,8 +91,10 @@
             <Button onClick={() => {dialog.close()}}>Close</Button>
         </div>
 
-        <div class="visual mb1" style="--bgGif: url({gif})">
-
+        <div class="scroller mb1" style="--bgGif: url({gif})">
+            {#each images as image}
+                <img src={image} alt="Preview image">
+            {/each}
         </div>
 
         <div class="details mb2">

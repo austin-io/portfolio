@@ -81,7 +81,10 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
     </style>
+    
+    <title>Austin IO</title>
 </svelte:head>
 
 <Nav></Nav>

@@ -54,7 +54,7 @@
     </div>
 
     {#if showVideo}
-        <iframe class="mb1 visual" src="https://www.youtube-nocookie.com/embed/iTtit7Rj5vY?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="mb1 visual" src="https://www.youtube.com/embed/ePG48UuP-EA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     {:else}
         <img class="mb1 visual" src={VrImage} alt="vr placeholder">
     {/if}
