@@ -134,6 +134,7 @@
         modalHeader = _h;
         modalContent = _c;
         modalLinks = _l;
+        modalSlides = [];
         modalSlides = _s;
         showModal = true;
     }
@@ -240,4 +241,6 @@
     </div>
 </section>
 
-<Modal bind:show={showModal} heading={modalHeader} content={modalContent} links={modalLinks} slides={modalSlides}></Modal>
+{#if showModal}
+    <Modal bind:show={showModal} heading={modalHeader} content={modalContent} links={modalLinks} slides={modalSlides}></Modal>
+{/if}

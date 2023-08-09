@@ -80,6 +80,10 @@
         aspect-ratio: 16/9;
         margin-bottom: 1rem;
         border-radius: 1rem;
+        
+        background-image: url("https://fastly.picsum.photos/id/167/5/5.jpg?hmac=UlFZmyGkCC12ueTPyrYlsT9PFaCqyvXyCQ-AHJiVNKI");
+        background-position: center;
+        background-size: cover;
     }
 </style>
 
