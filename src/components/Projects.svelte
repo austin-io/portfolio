@@ -1,10 +1,55 @@
 <script>
+    // Thumbnail images
     import VrImage from "$lib/images/vr_headset.gif";
     import fidelisPreview from "$lib/images/optimized_fidelis_preview.png";
     import forkliftPreview from "$lib/images/optimized_forklift_preview.png";
     import celltypesPreview from "$lib/images/optimized_celltypes_preview.png";
     import assassinPreview from "$lib/images/optimized_assassin_preview.png";
     import labPreview from "$lib/images/optimized_lab_preview.png";
+
+    // Thumbnail preview gifs
+    import fidelisGif from "$lib/images/fidelis.gif";
+    import forkliftGif from "$lib/images/forklift.gif";
+    import bloodstreamGif from "$lib/images/bloodstream.gif";
+    import assassinGif from "$lib/images/assassin.gif";
+    import labGif from "$lib/images/lab.gif";
+
+    // Project slideshow images
+    import fidelisImg1 from "$lib/images/fidelis_img1.png";
+    import fidelisImg2 from "$lib/images/fidelis_img2.png";
+    import fidelisImg3 from "$lib/images/fidelis_img3.png";
+    import fidelisImg4 from "$lib/images/fidelis_img4.png";
+    import fidelisImg5 from "$lib/images/fidelis_img5.png";
+    import fidelisImg6 from "$lib/images/fidelis_img6.png";
+    import fidelisImg7 from "$lib/images/fidelis_img7.png";
+
+    import assassinImg1 from "$lib/images/assassin_img1.png";
+    import assassinImg2 from "$lib/images/assassin_img2.png";
+    import assassinImg3 from "$lib/images/assassin_img3.png";
+    import assassinImg4 from "$lib/images/assassin_img4.png";
+    import assassinImg5 from "$lib/images/assassin_img5.png";
+    import assassinImg6 from "$lib/images/assassin_img6.png";
+
+    import bloodstreamImg1 from "$lib/images/bloodstream_img1.png";
+    import bloodstreamImg2 from "$lib/images/bloodstream_img2.png";
+    import bloodstreamImg3 from "$lib/images/bloodstream_img3.png";
+    import bloodstreamImg4 from "$lib/images/bloodstream_img4.png";
+    import bloodstreamImg5 from "$lib/images/bloodstream_img5.png";
+    import bloodstreamImg6 from "$lib/images/bloodstream_img6.png";
+
+    import forkliftImg1 from "$lib/images/forklift_img1.png";
+    import forkliftImg2 from "$lib/images/forklift_img2.png";
+    import forkliftImg3 from "$lib/images/forklift_img3.png";
+    import forkliftImg4 from "$lib/images/forklift_img4.png";
+    import forkliftImg5 from "$lib/images/forklift_img5.png";
+    import forkliftImg6 from "$lib/images/forklift_img6.png";
+
+    import labImg1 from "$lib/images/lab_img1.png";
+    import labImg2 from "$lib/images/lab_img2.png";
+    import labImg3 from "$lib/images/lab_img3.png";
+    import labImg4 from "$lib/images/lab_img4.png";
+    import labImg5 from "$lib/images/lab_img5.png";
+    import labImg6 from "$lib/images/lab_img6.png";
 
     import Button from "./Button.svelte";
     import Modal from "./Modal.svelte";
@@ -13,24 +58,83 @@
     let modalHeader = "";
     let modalContent = "";
     let modalLinks = [];
+    let modalSlides = [];
     
-    let list = [
-        {name: "Fidelis", text: "A high fidelity Cataract Surgical Simulator in VR designed to train new Ophthamologists around the world.", 
-            link: "", image: fidelisPreview, gif: VrImage},
-        {name: "Forklift Trainer VR", text: "A forklift simulation program designed to train new drivers the basics of forklift mobility and operations.", 
-            link: "", image: forkliftPreview, gif: VrImage},
-        {name: "Cell Types XR", text: "An educational experience that allows the user to explore various cells and bacteria in the human bloodstream.", 
-            link: "", image: celltypesPreview, gif: VrImage},
-        {name: "Veggie Assassin XR", text: "An exciting game of reflexes inspired by the hit mobile game Fruit Ninja.", 
-            link: "", image: assassinPreview, gif: VrImage},
-        {name: "Lab XR", text: "A collection of rooms full of interactive VR experiences, demonstrating a variety of complex algorithms.", 
-            link: "", image: labPreview, gif: VrImage},
+    let modalData = [
+        {name: "Fidelis", 
+            text: "A high fidelity Cataract Surgical Simulator in VR designed to train new Ophthamologists around the world.", 
+            links: [
+                {name: "Alcon", url: "https://www.alcon.com/media-release/alcon-introduces-state-art-virtual-reality-surgical-training-technology"},
+                {name: "LinkedIn", url: "https://www.linkedin.com/posts/myalcon_training-education-apao-activity-7048564541424640000-xFmz/?utm_source=share&utm_medium=member_desktop"}], 
+            slides: [
+                fidelisImg1, 
+                fidelisImg2, 
+                fidelisImg3, 
+                fidelisImg4, 
+                fidelisImg5, 
+                fidelisImg6, 
+                fidelisImg7], 
+            image: fidelisPreview, 
+            gif: fidelisGif},
+        {name: "Forklift Trainer VR", 
+            text: "A forklift simulation program designed to train new drivers the basics of forklift mobility and operations.", 
+            links: [
+                {name: "Youtube", url: "https://www.youtube.com/watch?v=WCSfHTEESCE"}], 
+            slides: [
+                forkliftImg2, 
+                forkliftImg1, 
+                forkliftImg3, 
+                forkliftImg4, 
+                forkliftImg5, 
+                forkliftImg6], 
+            image: forkliftPreview, 
+            gif: forkliftGif},
+        {name: "Cell Types XR", 
+            text: "An educational experience that allows the user to explore various cells and bacteria in the human bloodstream.", 
+            links: [
+                {name: "Youtube", url: "https://www.youtube.com/watch?v=gzaeIta2FaY"}], 
+            slides: [
+                bloodstreamImg1, 
+                bloodstreamImg2, 
+                bloodstreamImg3, 
+                bloodstreamImg4, 
+                bloodstreamImg5, 
+                bloodstreamImg6], 
+            image: celltypesPreview, 
+            gif: bloodstreamGif},
+        {name: "Veggie Assassin XR", 
+            text: "An exciting game of reflexes inspired by the hit mobile game Fruit Ninja.", 
+            links: [
+                {name: "GitHub", url: "https://github.com/austin-io/VeggieAssassinXR"}], 
+            slides: [
+                assassinImg2, 
+                assassinImg1, 
+                assassinImg3, 
+                assassinImg4, 
+                assassinImg5, 
+                assassinImg6], 
+            image: assassinPreview, 
+            gif: assassinGif},
+        {name: "Lab XR", 
+            text: "A collection of rooms full of interactive VR experiences, demonstrating a variety of complex algorithms.", 
+            links: [
+                {name: "GitHub", url: "https://github.com/austin-io/LabXR"}], 
+            slides: [
+                labImg1, 
+                labImg2, 
+                labImg3, 
+                labImg4, 
+                labImg5, 
+                labImg6], 
+            image: labPreview, 
+            gif: labGif},
     ];
 
-    const updateModal = (_h, _c, _l) => {
+    const updateModal = (_h, _c, _l, _s) => {
         modalHeader = _h;
         modalContent = _c;
         modalLinks = _l;
+        modalSlides = _s;
         showModal = true;
     }
 </script>
@@ -114,7 +218,7 @@
     <h2 class="mb3 title">My <span class="grad">Projects</span></h2>
 
     <div class="grid">
-        {#each list as project }    
+        {#each modalData as project }    
             <div class="card">
                 
                 <div class="cardImage mb1" style="--bgImage: url({project.image}); --bgGif: url({project.gif});">
@@ -127,7 +231,7 @@
                 </div>
 
                 <div class="cardBtn">
-                    <Button onClick={() => {updateModal(project.name, project.text, [{name: "GitHub", url: "#"}])}}>More info</Button>
+                    <Button onClick={() => {updateModal(project.name, project.text, project.links, project.slides)}}>More info</Button>
                 </div>
 
             </div>
@@ -136,4 +240,4 @@
     </div>
 </section>
 
-<Modal bind:show={showModal} heading={modalHeader} content={modalContent} links={modalLinks}></Modal>
+<Modal bind:show={showModal} heading={modalHeader} content={modalContent} links={modalLinks} slides={modalSlides}></Modal>

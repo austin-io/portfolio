@@ -10,7 +10,7 @@
     export let content = "Content";
     export let gif = "http://127.0.0.1:5173/portfolio/src/lib/images/vr_headset.gif";
     export let links = [];
-    export let images = ["https://picsum.photos/400", "https://picsum.photos/400", "https://picsum.photos/400"];
+    export let slides = ["https://picsum.photos/400", "https://picsum.photos/400", "https://picsum.photos/400"];
 
 </script>
 
@@ -92,7 +92,7 @@
         </div>
 
         <div class="scroller mb1" style="--bgGif: url({gif})">
-            {#each images as image}
+            {#each slides as image}
                 <img src={image} alt="Preview image">
             {/each}
         </div>

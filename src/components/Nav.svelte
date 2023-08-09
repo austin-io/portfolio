@@ -67,11 +67,14 @@
         background-color: #eee;
     }
 
+    .logo {
+        font-weight: bold;
+    }
 </style>
 
 <nav class="p1 nav">
     <section class="center p1">
-        <Button>Austin IO</Button>
+        <a class="menuButton logo" href="#id_home" on:click|preventDefault={scrollIntoView}>Austin IO</a>
         
         <div class="menuRoot">
             <Button onClick={() => {showMenu = !showMenu;}}>
