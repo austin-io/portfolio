@@ -81,11 +81,11 @@
             links: [
                 {name: "Youtube", url: "https://www.youtube.com/watch?v=WCSfHTEESCE"}], 
             slides: [
+                forkliftImg5, 
                 forkliftImg2, 
-                forkliftImg1, 
                 forkliftImg3, 
                 forkliftImg4, 
-                forkliftImg5, 
+                forkliftImg1, 
                 forkliftImg6], 
             image: forkliftPreview, 
             gif: forkliftGif},
@@ -94,12 +94,13 @@
             links: [
                 {name: "Youtube", url: "https://www.youtube.com/watch?v=gzaeIta2FaY"}], 
             slides: [
+                bloodstreamImg6,
                 bloodstreamImg1, 
                 bloodstreamImg2, 
                 bloodstreamImg3, 
                 bloodstreamImg4, 
                 bloodstreamImg5, 
-                bloodstreamImg6], 
+            ], 
             image: celltypesPreview, 
             gif: bloodstreamGif},
         {name: "Veggie Assassin XR", 
@@ -107,12 +108,12 @@
             links: [
                 {name: "GitHub", url: "https://github.com/austin-io/VeggieAssassinXR"}], 
             slides: [
-                assassinImg2, 
-                assassinImg1, 
-                assassinImg3, 
-                assassinImg4, 
                 assassinImg5, 
-                assassinImg6], 
+                assassinImg6,
+                assassinImg4, 
+                assassinImg2, 
+                assassinImg3, 
+                assassinImg1], 
             image: assassinPreview, 
             gif: assassinGif},
         {name: "Lab XR", 
