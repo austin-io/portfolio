@@ -76,8 +76,9 @@
     .scroller > img {
         flex: 0 0 auto;
         width: auto;
+        max-width: 100%;
         object-fit: cover;
-        object-size: cover;
+        object-position: center;
         aspect-ratio: 16/9;
         margin-bottom: 1rem;
         border-radius: 1rem;
