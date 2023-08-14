@@ -3,6 +3,7 @@
 
     export let show = false;
     let dialog = null;
+    let modal = null;
 
     $: if (dialog && show) dialog.showModal();
 
@@ -28,7 +29,7 @@
         background-color: #000a;
     }
 
-    dialog > div {
+    .modal {
         width: 100%;
         border-radius: 1rem;
         padding: 1rem;
@@ -87,9 +88,9 @@
     }
 </style>
 
-<dialog bind:this={dialog} on:close={() => {show = false;}} >
+<dialog bind:this={dialog} on:close={() => {show = false;}} on:click={(e) => {if(!modal.contains(e.target)) {dialog.close()} }} >
 
-    <div>
+    <div class="modal" bind:this={modal}>
     
         <div class="closeRow mb1">
             <Button onClick={() => {dialog.close()}}>Close</Button>

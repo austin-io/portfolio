@@ -43,6 +43,8 @@
     
     <div class="bar mb4"></div>
 
+    <h2 class="mb3 title"><span class="grad">Testimonials</span></h2>
+
     <div class="grid mb4">
         <div class="gridItem">
             <img class="mb2" src={TomPic} />

@@ -62,10 +62,11 @@
     
     let modalData = [
         {name: "Fidelis", 
-            text: "A high fidelity Cataract Surgical Simulator in VR designed to train new Ophthamologists around the world.", 
+            text: "A high fidelity Cataract Surgical Simulator in VR designed to train new Ophthamologists around the world. Developed with Alcon and Elara Systems Inc.", 
             links: [
                 {name: "Alcon", url: "https://www.alcon.com/media-release/alcon-introduces-state-art-virtual-reality-surgical-training-technology"},
-                {name: "LinkedIn", url: "https://www.linkedin.com/posts/myalcon_training-education-apao-activity-7048564541424640000-xFmz/?utm_source=share&utm_medium=member_desktop"}], 
+                {name: "LinkedIn", url: "https://www.linkedin.com/posts/myalcon_training-education-apao-activity-7048564541424640000-xFmz/?utm_source=share&utm_medium=member_desktop"},
+                {name: "Elara", url: "https://elarasystems.com/"}], 
             slides: [
                 fidelisImg1, 
                 fidelisImg2, 
@@ -77,8 +78,9 @@
             image: fidelisPreview, 
             gif: fidelisGif},
         {name: "Forklift Trainer VR", 
-            text: "A forklift simulation program designed to train new drivers the basics of forklift mobility and operations.", 
+            text: "A forklift simulation program designed to train new drivers the basics of forklift mobility and operations. Developed at Elara Systems Inc.", 
             links: [
+                {name: "Elara", url: "https://elarasystems.com/"},
                 {name: "Youtube", url: "https://www.youtube.com/watch?v=WCSfHTEESCE"}], 
             slides: [
                 forkliftImg5, 
@@ -90,8 +92,9 @@
             image: forkliftPreview, 
             gif: forkliftGif},
         {name: "Cell Types XR", 
-            text: "An educational experience that allows the user to explore various cells and bacteria in the human bloodstream.", 
+            text: "An educational experience that allows the user to explore various cells and bacteria in the human bloodstream. Developed at Elara Systems Inc.", 
             links: [
+                {name: "Elara", url: "https://elarasystems.com/"},
                 {name: "Youtube", url: "https://www.youtube.com/watch?v=gzaeIta2FaY"}], 
             slides: [
                 bloodstreamImg6,
@@ -104,7 +107,7 @@
             image: celltypesPreview, 
             gif: bloodstreamGif},
         {name: "Veggie Assassin XR", 
-            text: "An exciting game of reflexes inspired by the hit mobile game Fruit Ninja.", 
+            text: "An exciting game of reflexes inspired by the hit mobile game Fruit Ninja. Independently developed.", 
             links: [
                 {name: "GitHub", url: "https://github.com/austin-io/VeggieAssassinXR"}], 
             slides: [
@@ -117,7 +120,7 @@
             image: assassinPreview, 
             gif: assassinGif},
         {name: "Lab XR", 
-            text: "A collection of rooms full of interactive VR experiences, demonstrating a variety of complex algorithms.", 
+            text: "A collection of rooms full of interactive VR experiences, demonstrating a variety of complex algorithms. Independently developed.", 
             links: [
                 {name: "GitHub", url: "https://github.com/austin-io/LabXR"}], 
             slides: [

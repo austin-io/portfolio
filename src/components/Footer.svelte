@@ -26,5 +26,5 @@
     <p><a href="mailto:austinypwork@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></p>
     <p class="mb1"><a href={Resume} download>Resume</a></p>
 
-    <p>Copyright &copy; 2023</p>
+    <p>Copyright &copy; {new Date().getFullYear()}</p>
 </footer>
