@@ -1,5 +1,5 @@
 <script>
-    import Resume from "$lib/docs/Resume_AustinPoberezhnik.pdf";
+    import Resume from "$lib/docs/AustinPoberezhnik_Resume.pdf";
 </script>
 
 <style>

@@ -1,6 +1,7 @@
 <script>
     // Thumbnail images
     import VrImage from "$lib/images/vr_headset.gif";
+    import snapPreview from "$lib/images/snapPreview.png";
     import fidelisPreview from "$lib/images/optimized_fidelis_preview.png";
     import forkliftPreview from "$lib/images/optimized_forklift_preview.png";
     import celltypesPreview from "$lib/images/optimized_celltypes_preview.png";
@@ -8,6 +9,7 @@
     import labPreview from "$lib/images/optimized_lab_preview.png";
 
     // Thumbnail preview gifs
+    import snapGif from "$lib/images/snap.gif";
     import fidelisGif from "$lib/images/fidelis.gif";
     import forkliftGif from "$lib/images/forklift.gif";
     import bloodstreamGif from "$lib/images/bloodstream.gif";
@@ -15,6 +17,12 @@
     import labGif from "$lib/images/lab.gif";
 
     // Project slideshow images
+    import snapImg1 from "$lib/images/snapPreview.png";
+    import snapImg2 from "$lib/images/snap_img2.png";
+    import snapImg3 from "$lib/images/snap_img3.png";
+    import snapImg4 from "$lib/images/snap_img4.png";
+    import snapImg5 from "$lib/images/snap_img5.png";
+
     import fidelisImg1 from "$lib/images/fidelis_img1.png";
     import fidelisImg2 from "$lib/images/fidelis_img2.png";
     import fidelisImg3 from "$lib/images/fidelis_img3.png";
@@ -61,6 +69,20 @@
     let modalSlides = [];
     
     let modalData = [
+        {name: "Marvel SNAP", 
+            text: "A live service card game featuring a collection of different characters from the Marvel Universe. Developed with Demiurge Studios and Second Dinner",
+            links: [
+                {name: "Demiurge", url: "https://demiurgestudios.com/"},
+                {name: "Marvel SNAP", url: "https://www.marvelsnap.com/home"},
+                {name: "Second Dinner", url: "https://seconddinner.com/"}], 
+            slides: [
+                snapImg1,
+                snapImg2,
+                snapImg3,
+                snapImg4,
+                snapImg5],
+            image: snapPreview,
+            gif: snapGif},
         {name: "Fidelis", 
             text: "A high fidelity Cataract Surgical Simulator in VR designed to train new Ophthamologists around the world. Developed with Alcon and Elara Systems Inc.", 
             links: [

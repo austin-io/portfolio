@@ -1,7 +1,7 @@
 <script>
     import Button from "./Button.svelte";
     import MenuIcon from "$lib/images/hamburger_menu_icon.svg";
-    import Resume from "$lib/docs/Resume_AustinPoberezhnik.pdf";
+    import Resume from "$lib/docs/AustinPoberezhnik_Resume.pdf";
 
     let showMenu = false;
 

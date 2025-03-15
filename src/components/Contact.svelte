@@ -1,7 +1,7 @@
 <script>
     import Button from "./Button.svelte";
     import ColorButton from "./ColorButton.svelte";
-    import Resume from "$lib/docs/Resume_AustinPoberezhnik.pdf";
+    import Resume from "$lib/docs/AustinPoberezhnik_Resume.pdf";
 
     let formName = "";
     let formMessage = "";
